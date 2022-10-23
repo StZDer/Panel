@@ -1,0 +1,380 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+.myVideo {
+    -o-object-fit: cover;
+    object-fit: cover;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.line {
+    width: 2em;
+    height: 0.3em;
+    background: #ffffff;
+    position: absolute;
+    animation: 12s line infinite linear;
+    transform-origin: 308px 22px;
+    top: calc(50% - 22px);
+    left: calc(40% - 308px);
+}
+@keyframes line {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.line1 {
+    animation-delay: 0.1s;
+}
+.line2 {
+    animation-delay: 0.2s;
+}
+.line3 {
+    animation-delay: 0.3s;
+}
+.line4 {
+    animation-delay: 0.4s;
+}
+.line5 {
+    animation-delay: 0.5s;
+}
+.line6 {
+    animation-delay: 0.6s;
+}
+.line7 {
+    animation-delay: 0.7s;
+}
+.line8 {
+    animation-delay: 0.8s;
+}
+.line9 {
+    animation-delay: 0.9s;
+}
+.line10 {
+    animation-delay: 1s;
+}
+.line11 {
+    animation-delay: 1.1s;
+}
+.line12 {
+    animation-delay: 1.2s;
+}
+.line13 {
+    animation-delay: 1.3s;
+}
+.line14 {
+    animation-delay: 1.4s;
+}
+.line15 {
+    animation-delay: 1.5s;
+}
+@media (min-width: 1920px) {
+    .rectangle {
+        z-index: 300000;
+        position: fixed;
+        width: 50%;
+        height: 50%;
+        animation-duration: 3s;
+    }
+    /* Лево вверх */
+    .rectangle1 {
+        right: 1;
+        bottom: 1;
+        animation-name: rectangle1;
+        clip-path: polygon(
+            0% 15%,
+            0 0,
+            15% 0%,
+            85% 0%,
+            100% 0,
+            100% 15%,
+            99% 63%,
+            72% 75%,
+            59% 100%,
+            15% 100%,
+            0 100%,
+            0% 85%
+        );
+    }
+    @keyframes rectangle1 {
+        from {
+            transform: translateY(-100%);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+
+    .rectangle1 img {
+        margin-top: 15%;
+        /* width: 75%; */
+        height: auto;
+        float: right;
+    }
+
+    /* лево низ */
+    .rectangle2 {
+        right: 1;
+        bottom: 0;
+        animation-name: rectangle2;
+        clip-path: polygon(0 0, 76% 0, 80% 20%, 100% 31%, 100% 100%, 0 100%);
+    }
+    @keyframes rectangle2 {
+        from {
+            transform: translateY(100%);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+    .rectangle2 img {
+        /* width: 75%; */
+        height: auto;
+        float: right;
+    }
+
+    /* право вверх */
+
+    .rectangle3 {
+        right: 0;
+        bottom: 1;
+        display: flex;
+        align-items: flex-end;
+        animation-name: rectangle3;
+        clip-path: polygon(
+            0% 15%,
+            0 0,
+            15% 0%,
+            85% 0%,
+            100% 0,
+            100% 15%,
+            99% 63%,
+            100% 100%,
+            59% 100%,
+            21% 100%,
+            15% 78%,
+            0 60%
+        );
+    }
+    @keyframes rectangle3 {
+        from {
+            transform: translateY(-100%);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+    .rectangle3 img {
+        /* width: 75%; */
+        height: auto;
+        float: right;
+        margin-top: 5%;
+    }
+
+    /* право низ */
+
+    .rectangle4 {
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: flex-end;
+        animation-name: rectangle4;
+        clip-path: polygon(
+            0 38%,
+            24% 25%,
+            38% 0,
+            85% 0%,
+            100% 0,
+            100% 15%,
+            99% 63%,
+            100% 100%,
+            59% 100%,
+            21% 100%,
+            0 100%,
+            0 60%
+        );
+    }
+
+    @keyframes rectangle4 {
+        from {
+            transform: translateY(100%);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+    .rectangle4 img {
+        height: auto;
+        float: right;
+        margin-bottom: 15%;
+    }
+
+    .circle {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: 4s circle;
+    }
+    .circle img {
+        width: 100%;
+        height: auto;
+    }
+    @keyframes circle {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    .line {
+        transform-origin: 448px 32px;
+        top: calc(50% - 32px);
+        left: calc(50% - 448px);
+    }
+}
+@media (max-width: 1080px) {
+    .rectangle {
+        z-index: 300000;
+        position: fixed;
+        width: 50%;
+        height: 50%;
+        animation-duration: 3s;
+    }
+
+    /* Лево вверх */
+    .rectangle1 {
+        right: 1;
+        bottom: 1;
+        animation-name: rectangleOne;
+        clip-path: polygon(
+            30% 0%,
+            100% 0,
+            100% 30%,
+            100% 80%,
+            85% 82%,
+            61% 100%,
+            0 100%,
+            0 0
+        );
+    }
+
+    @keyframes rectangleOne {
+        from {
+            transform: translateX(-100%);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    .rectangle1 img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+        /* float: right; */
+        margin-bottom: 5%;
+        /*margin-right: 5%; */
+    }
+
+    /* лево низ */
+    .rectangle2 {
+        right: 1;
+        bottom: 0;
+        animation-name: rectangleTwo;
+        clip-path: polygon(72% 0, 87% 12%, 100% 14%, 100% 100%, 0 100%, 0 0);
+    }
+
+    @keyframes rectangleTwo {
+        from {
+            transform: translateX(-100%);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    .rectangle2 img {
+        width: 100%;
+        height: auto;
+        float: right;
+    }
+
+    /* право вверх */
+
+    .rectangle3 {
+        right: 0;
+        bottom: 1;
+        display: flex;
+        align-items: flex-end;
+        animation-name: rectangleThree;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 100%, 13% 89%, 0 82%);
+    }
+
+    @keyframes rectangleThree {
+        from {
+            transform: translateX(100%);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    .rectangle3 img {
+        width: 100%;
+        height: auto;
+        float: right;
+        margin-bottom: 5%;
+    }
+
+    /* право низ */
+
+    .rectangle4 {
+        right: 0;
+        bottom: 0;
+        animation-name: rectangleFour;
+        clip-path: polygon(18% 14%, 33% 0, 100% 0, 100% 100%, 0 100%, 0 20%);
+    }
+
+    @keyframes rectangleFour {
+        from {
+            transform: translateX(100%);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    .rectangle4 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .circle {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-40%, -50%);
+    }
+    .circle img {
+        width: 80%;
+        height: auto;
+        animation: 4s circle;
+    }
+
+    @keyframes circle {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+}

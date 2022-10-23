@@ -1,0 +1,18 @@
+// Bootstrap
+@import "bootstrap/scss/bootstrap";
+// Bootstrap-icons
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+.container .title {
+    position: relative;
+    text-align: center;
+}
+.container .table .img {
+    width: 5rem;
+}
+.left {
+    float: left;
+}
+.btn-smile {
+    width: 2.5rem;
+}
